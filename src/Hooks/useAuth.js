@@ -4,7 +4,7 @@ const useAuth = () => {
   //Regiter
 
   const createNewUser = (data) => {
-    const url = "https://hotels-api.academlo.tech /users";
+    const url = "https://hotels-api.academlo.tech/users";
     axios.post(url, data)
       .then((res) => console.log(res.data)) //no hace falta guardar la informacion en un estado, todo esta guardado en la base de datos
       .catch((err) => console.log(err));
@@ -13,7 +13,7 @@ const useAuth = () => {
   //Login
 
   const loginUser = (data) => {
-    const url="https://hotels-api.academlo.tech /users/login"
+    const url="https://hotels-api.academlo.tech/users/login"
     axios.post(url, data)
       .then((res) => {
       console.log(res.data) //no hace falta guardar la informacion en un estado, todo esta guardado en la base de datos

@@ -16,7 +16,10 @@ const HotelInfoPage = () => {
   const [hotel, getHotel] = useFetch(url);
 
   useEffect(() => {
-    getHotel();
+  
+      getHotel();
+    
+   
   }, [url]);
 
   console.log(hotel);

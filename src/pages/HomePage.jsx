@@ -24,7 +24,7 @@ const HomePage = () => {
     }, [])
 
   
-    // console.log(hotels);
+    console.log(hotels);
     // console.log(nameImput);
     // console.log(fromTo);
 

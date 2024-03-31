@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import useCrud from '../../Hooks/useCrud'
 
 const CommentsSection = (hotelId) => {
 
@@ -16,7 +17,7 @@ useEffect(() => {
     <div>
       <div>
         {
-          reviews?.map(reviewInfo => (
+          reviews?.results.map(reviewInfo => (
             <div key={reviewInfo.id}>
               <h4>{}</h4>
               <div>{reviewInfo.rating}⭐</div>

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Styles/SliderImgs.css"
 
 const SliderImgs = ({hotel}) => {
 
-    const [imgSelected, setImgSelected] = useState()
+    const [imgSelected, setImgSelected] = useState(0)
 
     const objStyle={
         transform: `translateX(calc(-${imgSelected}/${hotel?.images.length}*100%))`,
