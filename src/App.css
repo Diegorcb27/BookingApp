@@ -1,0 +1,18 @@
+label{
+    display: block;
+}
+
+.reserve_rating{
+    color: rgb(40, 40, 238);
+    cursor: pointer;
+}
+
+.reserve_rating:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.reserve_img{
+    width: 100%;
+    max-width: 200px;
+}
