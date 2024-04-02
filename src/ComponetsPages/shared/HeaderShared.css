@@ -1,0 +1,20 @@
+.container_header{
+    padding: 1.5rem;
+    background: linear-gradient(to right, transparent, #f35811);
+    border: 1rem  black ;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem
+    ;
+}
+.booking_title{
+    position: absolute; 
+    padding-top: 1rem;
+}
+.container_list{
+    /* position: relative; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-top: 2rem;
+    
+}

@@ -1,0 +1,15 @@
+.filter_name{
+    display: flex;
+    justify-content: center;
+}
+
+.container_hp{
+    display: flex;
+}
+
+.container_filter_priceCities{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem;
+}

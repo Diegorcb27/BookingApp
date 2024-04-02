@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import "./styles/FilterPrice.css"
 
 const FilterPrice = ({setfromTo}) => {
 
@@ -15,9 +16,9 @@ const FilterPrice = ({setfromTo}) => {
     }
 
   return (
-    <div>
+    <div className="container_price">
       <h3>Price</h3>
-      <form onSubmit={handleSubmit(submit)}>
+      <form className="form_price" onSubmit={handleSubmit(submit)}>
         <label>
           <span>From</span>
           <input  {...register("from")} type="number" />
@@ -26,7 +27,7 @@ const FilterPrice = ({setfromTo}) => {
           <span>To</span>
           <input {...register("to")} type="number" />
         </label>
-        <button>Apply</button>
+        <button className="form_btn">Apply</button>
       </form>
     </div>
   );

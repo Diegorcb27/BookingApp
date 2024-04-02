@@ -1,0 +1,14 @@
+.form_price{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form_btn{
+    padding: 0.5rem;
+    background-color: #fa4006;
+    border-radius:  5%;
+    border: none;
+   color: white;
+   font-size: large;
+}

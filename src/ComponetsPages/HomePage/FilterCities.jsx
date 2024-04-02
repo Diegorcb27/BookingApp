@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import useFetch from "../../Hooks/useFetch";
 import { useDispatch } from "react-redux";
 import { getHotelsThunk } from "../../store/states/hotels.state";
+import "./styles/FilterCities.css"
 
 const FilterCities = () => {
   const url = "https://api-booking-app-md3-gen33.onrender.com/cities";
@@ -32,7 +33,7 @@ const handleFilterCities = (id) =>{
   return (
     <div>
       <h3>Cities</h3>
-      <ul>
+      <ul className="filter_cities">
         <li onClick={() => handleFilterCities("all cities")}>All cities</li>
         {
             cities?.map(city=>(

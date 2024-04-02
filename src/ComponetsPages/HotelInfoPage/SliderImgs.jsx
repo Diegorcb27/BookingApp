@@ -27,7 +27,7 @@ const handleNext=()=>{
 }
 
   return (
-    <div className='Slider'>
+    <div className='slider'>
         <button onClick={handlePrev} className='slider_btn'>&lt;</button>
         <div className='slider_exterior'>
             <div style={objStyle} className='slider_interior'>

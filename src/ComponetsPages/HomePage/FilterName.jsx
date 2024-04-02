@@ -1,4 +1,5 @@
 import React, { useRef } from 'react'
+import "./styles/FilterName.css"
 
 const FilterSearch = ({setNameImput}) => {
 
@@ -12,9 +13,9 @@ const FilterSearch = ({setNameImput}) => {
     }
 
   return (
-    <form onSubmit={handleSubmit}>
-        <input ref={inputSearch} type="text"/>
-        <button>Search</button>
+    <form className="filter_name_form" onSubmit={handleSubmit}>
+        <input className="filter_name_input" ref={inputSearch} type="text"/>
+        <button className='filter_name_btn'>Search</button>
     </form>
   )
 }

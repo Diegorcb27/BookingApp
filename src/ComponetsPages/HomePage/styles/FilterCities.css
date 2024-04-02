@@ -1,0 +1,13 @@
+.filter_cities{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.filter_cities>*:hover{
+    cursor: pointer;
+    background-color: #fa4006;
+    padding: 0.5rem;
+}
