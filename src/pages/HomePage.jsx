@@ -19,7 +19,7 @@ const HomePage = () => {
     const dispatch = useDispatch()  //llamamos al despachador
 
     useEffect(() => {
-        const url ="https://hotels-api.academlo.tech/hotels"
+        const url ="https://api-booking-app-md3-gen33.onrender.com/hotels"
         dispatch(getHotelsThunk(url))   //para llamar a las thunk tambien  hay que despcharla, pero como dentro esta el seter del estado global o la action hay que usar useSelector
     }, [])
 

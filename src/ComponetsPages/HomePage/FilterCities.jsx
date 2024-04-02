@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { getHotelsThunk } from "../../store/states/hotels.state";
 
 const FilterCities = () => {
-  const url = "https://hotels-api.academlo.tech/cities";
+  const url = "https://api-booking-app-md3-gen33.onrender.com/cities";
   const [cities, getCities] = useFetch(url);
 
   useEffect(() => {
@@ -18,12 +18,12 @@ const dispatch = useDispatch()
 const handleFilterCities = (id) =>{
     
     if(id !== "all cities"){
-        let url=`https://hotels-api.academlo.tech/hotels?cityId=${id}`
+        let url=`https://api-booking-app-md3-gen33.onrender.com/hotels?cityId=${id}`
         dispatch(getHotelsThunk(url))      //hace la peticion de cada hotel con ese id donde le podemo coloca cityId como parametro
        
 
     } else{
-        let url = "https://hotels-api.academlo.tech/hotels"
+        let url = "https://api-booking-app-md3-gen33.onrender.com/hotels"
         dispatch(getHotelsThunk(url))
     }
     

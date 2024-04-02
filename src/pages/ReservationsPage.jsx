@@ -29,14 +29,14 @@ console.log(reservations);
       />
       <div>
         {
-          reservations?.map( reserve=> {
+          reservations?.map( reserve=> (
             <ReserveCard
             key={reserve.id}
             reserve={reserve}
             deleteReservation={deleteReservation}
             setReserveSelected={setReserveSelected} 
             />
-          })
+          ))
         }
       </div>
     </div>

@@ -17,13 +17,7 @@ const submit = data =>{
   })
 }
 
-const navigate = useNavigate()
 
-const handleWelcome=()=>{
-
-navigate("/welcome")
-
-}
 
   return (
     <div>
@@ -36,7 +30,7 @@ navigate("/welcome")
           <span>Password</span>
           <input {...register("password")} type="password" />
         </label>
-        <button onClick={handleWelcome}>Submit</button>
+        <button >Submit</button>
       </form>
     </div>
   );

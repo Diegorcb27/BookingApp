@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import useCrud from '../../Hooks/useCrud'
 
-const CommentsSection = (hotelId) => {
+const CommentsSection = ({hotelId}) => {
 
 const [reviews, getReviews] = useCrud()
 
 useEffect(() => {
   if(hotelId){
-    getReviews(`reviews?hotelId=${hotelId}`)
+    getReviews(`/reviews?hotelId=${hotelId}`)
   }
 
 }, [hotelId])

@@ -15,12 +15,12 @@ console.log(reserve);
   return (
     <article>
       <header>
-        <img className="reserve_img" src={reserve.hotel.images[0].url} alt="" />
+        <img className="reserve_img" src={reserve.hotel.images?.[0].url} alt="" />
       </header>
       <section>
         <h3>{reserve.hotel.name}</h3>
         <div>
-          {reserve.hotel.city.name}, {reserve.hotel.city.country}
+          {reserve.hotel.city?.name}, {reserve.hotel.city?.country}
         </div>
         <div onClick={handleReviews} className="reserve_rating">Rate and comment this visit...</div>
         <div>

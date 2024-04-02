@@ -43,9 +43,9 @@ const RegisterPage = () => {
           <span>Gender</span>
           <select {...register("gender")}>
             <option value="unknown">Unknown</option>
-            <option value="male">male</option>
-            <option value="famale">famale</option>
-            <option value="other">prefer not say</option>
+            <option value="MALE">male</option>
+            <option value="FAMALE">female</option>
+            <option value="OTHER">prefer not say</option>
           </select>
         </label>
         <button>Submit</button>

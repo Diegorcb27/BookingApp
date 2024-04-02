@@ -7,7 +7,7 @@ const useCrud = () => {
 
 const [response, setResponse]=useState()
 
-const baseUrl="https://hotels-api.academlo.tech"
+const baseUrl="https://api-booking-app-md3-gen33.onrender.com"
 
 //GET
 

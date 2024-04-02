@@ -5,13 +5,14 @@ import { Map, Marker } from "pigeon-maps";
 import OtherHotels from "../ComponetsPages/HotelInfoPage/OtherHotels";
 import SliderImgs from "../ComponetsPages/HotelInfoPage/SliderImgs";
 import CommentsSections from "../ComponetsPages/HotelInfoPage/CommentsSection";
+import ReservationsHotel from '../ComponetsPages/HotelInfoPage/ReservationsHotel';
 
 const HotelInfoPage = () => {
   const { id } = useParams(); //se guia del id
 
   //no hay que uar el etado global porque solo ocuparemo esa informacion en esta pagina, hay que crear un useFetch o custom hook
 
-  const url = `https://hotels-api.academlo.tech/hotels/${id}`;
+  const url = `https://api-booking-app-md3-gen33.onrender.com/hotels/${id}`;
 
   const [hotel, getHotel] = useFetch(url);
 
@@ -54,7 +55,7 @@ const HotelInfoPage = () => {
           <i className="bx bx-map"></i>
           <span>{hotel?.address}</span>
         </div>
-        <p>{hotel?.description}</p>
+        <p>{hotel?.decription}</p>
       </div>
       <CommentsSections
         hotelId={hotel?.id}
