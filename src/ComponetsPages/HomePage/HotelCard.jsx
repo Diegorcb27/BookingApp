@@ -13,7 +13,7 @@ navigate(`/hotel/${hotel.id}`)
   return (
     <article className='card'>
       <header className='card_header'>
-        <img className="card_img" src={hotel.images[0].url} alt="" />
+        <img className="card_img" src={hotel.images[0]?.url} alt="" />
       </header>
       <section className='card_body'>
         <h3 className='card_name'>{hotel.name}</h3>
