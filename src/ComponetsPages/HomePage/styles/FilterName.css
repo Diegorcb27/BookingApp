@@ -1,20 +1,26 @@
 .filter_name_form{
     padding: 1rem;
+    margin-bottom: 5rem;
     
 }
 
 .filter_name_input{
-    padding: 0.5rem;
+    padding: 0.8rem;
     font-size: large;
     border: 0.5px solid rgb(212, 201, 201);
-    border-radius:  5%
+    border-radius:  10px 0 0 10px
 }
 
 .filter_name_btn{
-    padding: 0.5rem;
+    padding: 0.8rem;
     background-color: #fa4006;
-    border-radius:  5%;
-    border: none;
+    border-radius:  0 10px 10px 0;
+    border: 1px solid  #fa4006;
    color: white;
    font-size: large;
+   
+}
+
+.filter_name_search{
+    font-size: smaller;
 }

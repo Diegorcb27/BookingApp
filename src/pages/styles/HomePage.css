@@ -3,8 +3,13 @@
     justify-content: center;
 }
 
+.filters{
+    text-align:left;
+}
+
 .container_hp{
     display: flex;
+    gap: 2.5em 2rem
 }
 
 .container_filter_priceCities{
@@ -12,4 +17,8 @@
     flex-direction: column;
     gap: 2rem;
     margin: 1rem;
+}
+
+.container_listHotels{
+    margin: 2rem;
 }

@@ -23,11 +23,11 @@ const HomePage = () => {
     dispatch(getHotelsThunk(url)); //para llamar a las thunk tambien  hay que despcharla, pero como dentro esta el seter del estado global o la action hay que usar useSelector
   }, []);
 
-  console.log(hotels);
+  // console.log(hotels);
   // console.log(nameImput);
   // console.log(fromTo);
 
-  const hotelsFiltered = hotels?.filter((hotelInfo) => {
+  const hotelsFiltered = hotels?.filter((hotelInfo) => {   //en hotelsFiltered guarda los hoteles filtadros segun por precio o nombre
     //Filter Name
     const filterName = hotelInfo.name.toLowerCase().includes(nameImput); // filterName es la condicion, aqui con el metodo include verificamos si lo que eta dentro del input coincide con el string del name, si eta incluido es true i no false
 
@@ -39,17 +39,23 @@ const HomePage = () => {
 
     return filterName && filterPrice;
   });
+
+  
   return (
     <div>
+     
       <div className="filter_name">
         <FilterName setNameImput={setNameImput} />
       </div>
+    
       <div className="container_hp">
+      
         <div className="container_filter_priceCities">
+          <h2 className="filters">Filters</h2>
           <FilterPrice setfromTo={setfromTo} />
-          <FilterCities />
+          <FilterCities setNameImput={setNameImput} />
         </div>
-        <div>
+        <div className="container_listHotels">
           <ListHotels hotels={hotelsFiltered} />
         </div>
       </div>

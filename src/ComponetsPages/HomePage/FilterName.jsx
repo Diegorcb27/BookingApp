@@ -15,7 +15,7 @@ const FilterSearch = ({setNameImput}) => {
   return (
     <form className="filter_name_form" onSubmit={handleSubmit}>
         <input className="filter_name_input" ref={inputSearch} type="text"/>
-        <button className='filter_name_btn'>Search</button>
+        <button className='filter_name_btn'><span className='filter_name_search'>Search</span></button>
     </form>
   )
 }

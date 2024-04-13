@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { getHotelsThunk } from "../../store/states/hotels.state";
 import "./styles/FilterCities.css"
 
-const FilterCities = () => {
+const FilterCities = ({setNameImput}) => {
   const url = "https://api-booking-app-md3-gen33.onrender.com/cities";
   const [cities, getCities] = useFetch(url);
 
@@ -26,13 +26,14 @@ const handleFilterCities = (id) =>{
     } else{
         let url = "https://api-booking-app-md3-gen33.onrender.com/hotels"
         dispatch(getHotelsThunk(url))
+        setNameImput("")
     }
     
 }
 
   return (
     <div>
-      <h3>Cities</h3>
+      <h3 className="cities_title">Cities</h3>
       <ul className="filter_cities">
         <li onClick={() => handleFilterCities("all cities")}>All cities</li>
         {

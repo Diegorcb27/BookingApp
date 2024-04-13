@@ -4,6 +4,13 @@
     gap: 0.5rem;
 }
 
+.span_price, span_input{
+    display: block;
+}
+.price_title{
+    text-align: center;
+}
+
 .form_btn{
     padding: 0.5rem;
     background-color: #fa4006;

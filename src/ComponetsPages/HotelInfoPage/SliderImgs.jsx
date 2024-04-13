@@ -39,8 +39,8 @@ const handleNext=()=>{
                     ))
                 }
             </div>
-            <button onClick={handleNext} className='slider_btn'>&gt;</button>
         </div>
+        <button onClick={handleNext} className='slider_btn'>&gt;</button>
     </div>
   )
 }

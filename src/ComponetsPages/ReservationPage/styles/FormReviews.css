@@ -1,0 +1,99 @@
+.form_review{
+    width: 400px;
+    /* max-width: 400px; */
+    background-color: white;
+    padding: 2em 1.5em 2.5em;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    
+    
+    
+}
+
+/*para cerrar el formulario*/
+
+.form_x{
+    position: absolute;
+    top: 0.7em;
+    right: 1.5em;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: red;
+
+}
+
+.form_x:hover{
+    transform: scale(1.2);
+}
+
+.form_title{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+    color: var(--mi-color);
+}
+.form_container_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.form_hotel_img{
+    /* height: 150px; */
+   width: 50%;
+   border-radius: 15px;
+   margin: 1rem;
+}
+
+div{
+    align-self: flex-start;
+}
+
+.form_span_value_1{
+    margin-left: 1em;
+  
+}
+
+.reserve_img{
+height: 100px;
+   width: 150px;
+   border-radius: 15px;
+   margin: 1rem;
+}
+
+.form_label{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 180px;
+}
+
+
+
+
+.form_field_comment{
+    width: 300px;
+    aspect-ratio: 2.5
+}
+
+.form_review_btn{
+    border: none;
+    background-color: var(--mi-color);
+    width: 50%;
+    color: white;
+    align-self: center;
+    height: 2em;
+}
+
+.form_review_btn:hover{
+    filter: brightness(1.5);
+}
+

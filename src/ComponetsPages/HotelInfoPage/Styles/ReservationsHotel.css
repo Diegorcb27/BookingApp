@@ -1,0 +1,48 @@
+.reservation_title{
+    color: #fa4006;
+    margin: 1rem 0 1rem 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.reservation_form{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+   
+ 
+
+}
+.form_span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+}
+
+.form{
+    margin-left: 2rem;
+
+}
+
+
+
+.form_btn_submit{
+    width: 30%;
+    padding: 1rem;
+    background-color: #fa4006;
+    border-radius:  10px 10px 10px 10px;
+    border: 1px solid  #fa4006;
+   color: white;
+   font-size: large;
+
+}
+
+
+
+ .form_span, form_input{
+    display: block;
+} 
+

@@ -17,15 +17,15 @@ const FilterPrice = ({setfromTo}) => {
 
   return (
     <div className="container_price">
-      <h3>Price</h3>
+      <h3 className="price_title">Price</h3>
       <form className="form_price" onSubmit={handleSubmit(submit)}>
         <label>
-          <span>From</span>
-          <input  {...register("from")} type="number" />
+          <span className="span_price">From</span>
+          <input  className="span_input"{...register("from")} type="number" />
         </label>
         <label>
-          <span>To</span>
-          <input {...register("to")} type="number" />
+          <span className="span_price">To</span>
+          <input className="span_input" {...register("to")} type="number" />
         </label>
         <button className="form_btn">Apply</button>
       </form>

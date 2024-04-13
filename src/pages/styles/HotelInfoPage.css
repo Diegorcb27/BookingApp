@@ -1,0 +1,33 @@
+.container_all_hotel{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.container_hotel_header{
+    margin: 2rem 0 2rem 0;
+}
+
+.title_hotel_header{
+    text-align: center;
+}
+
+.rating_hotel_header{
+    text-align: center;
+}
+
+.container_slider_map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.hotel_map{
+    width: 50%;
+    align-self: center;
+}
+
+.container_hotel_description>*{
+    margin: 1rem 0 1rem 0;
+}
+
+

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import useFetch from '../../Hooks/useFetch'
 import HotelCard from '../HomePage/HotelCard'
+import "./Styles/OtherHotels.css"
+// import OtherHotels from "./Styles/OtherHotels.css"
 
 const OtherHotels = ({cityId, hotelId}) => {
 
@@ -19,9 +21,9 @@ useEffect(() => {
 console.log(hotels);
 
   return (
-    <div>
+    <div className='container_otherHotels'>
          {
-            hotels<1 ? "" :    <h2>Other Hotels in {hotels?.[0].city.name}</h2> 
+            hotels<1 ? "" :    <h2>Other Hotels in <span className='title_span_hotel'>{hotels?.[0].city.name}</span></h2> 
         } 
      
         <div className='card-container'>
